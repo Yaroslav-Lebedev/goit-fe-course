@@ -1,0 +1,146 @@
+/* FONT START */
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/Myriad Pro/MyriadPro-Regular.eot');
+	src: local('../fonts/Myriad Pro/Myriad Pro Regular'), local('MyriadPro-Regular'),
+		url('../fonts/Myriad Pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Myriad Pro/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/Myriad Pro/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display'), local('PlayfairDisplay-Regular'),
+        url(http://allfont.net/cache/fonts/playfair-display_8e41554d1e7b796ea2d98f5000ad22b8.woff) format('woff'),
+        url(http://allfont.net/cache/fonts/playfair-display_8e41554d1e7b796ea2d98f5000ad22b8.ttf) format('truetype');
+}
+/* FONT STOP */
+
+/* RESET CSS START*/
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro";
+    color: #626262;
+    /* outline: 1px grey solid;  */
+}
+/* RESET CSS STOP*/
+
+/* HEADER START*/
+nav li {
+    display: inline-block;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #626262;d
+    display: block;
+    width: 15;
+    height: 45;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif; 
+    }
+
+.nav {
+    text-align: center;
+    font-size: 0px;
+}
+    
+.nav a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 255)
+    }
+/* HEADER STOP*/
+
+
+body {
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: snow;
+    font-size: 0px;
+}
+
+.main {
+    text-align: center;   
+    font-size: 0px;
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+    vertical-align: top;
+    font-size: 0px;
+}
+
+article {
+    display: inline-block;
+    width: 420px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: left;
+    height: auto;
+    font-size: 0px;
+    padding: 20px;
+    vertical-align: top;
+}
+
+header {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* div {
+    font-size: 0px;
+} */
+
+/* section li {
+    display: inline-block;
+    width: 280;
+    margin: auto;
+} */
+
+/* section {
+    vertical-align: top;
+} */
+
+h2 {
+    font-size: 20px;
+    font-style: bold;
+    text-align: left;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 10px;
+}
+
+p {
+    height: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    text-align: left;
+}
+
+.title {
+    height: 40px;
+    font-size: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 10px;
+}
+
+
+
