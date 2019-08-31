@@ -16,6 +16,10 @@
     height: auto;
     text-align: left;
 }
+
+body {
+    padding-top: 70px;
+}
 /* BODY STOP */
 
 /* HEADER START */
@@ -48,7 +52,7 @@ nav a {
 
 nav {
     text-align: center;
-    margin-bottom: 63px;
+    margin-bottom: 73px;
 }
     
 .nav a:hover {
