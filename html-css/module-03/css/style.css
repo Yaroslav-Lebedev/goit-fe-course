@@ -1,43 +1,32 @@
-/* FONT START */
-@font-face {
-	font-family: 'Myriad Pro';
-	src: url('../fonts/Myriad Pro/MyriadPro-Regular.eot');
-	src: local('../fonts/Myriad Pro/Myriad Pro Regular'), local('MyriadPro-Regular'),
-		url('../fonts/Myriad Pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Myriad Pro/MyriadPro-Regular.woff') format('woff'),
-		url('../fonts/Myriad Pro/MyriadPro-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Playfair Display'), local('PlayfairDisplay-Regular'),
-        url(http://allfont.net/cache/fonts/playfair-display_8e41554d1e7b796ea2d98f5000ad22b8.woff) format('woff'),
-        url(http://allfont.net/cache/fonts/playfair-display_8e41554d1e7b796ea2d98f5000ad22b8.ttf) format('truetype');
-}
-/* FONT STOP */
-
-/* RESET CSS START*/
+/* RESET CSS START */
 *  {
     margin: 0;
     padding: 0;
-    font-family: "Myriad Pro";
-    color: #626262;
-    /* outline: 1px grey solid;  */
 }
-/* RESET CSS STOP*/
+/* RESET CSS STOP */
 
-/* HEADER START*/
+/* BODY START */
+* {    
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: normal;
+    height: auto;
+    text-align: left;
+}
+/* BODY STOP */
+
+/* HEADER START */
+ul {   
+    text-align: center;
+}
+
 nav li {
     display: inline-block;
-    /* box-sizing: border-box; */
-    width: auto;
-    margin-right: 101px;
-    /* text-align: center; */
-    font-size: 14px;
+    width: 100px;
+    margin-right: 100px;
 }
 
 li:first-child {
@@ -48,128 +37,92 @@ li:last-child {
     margin-right: 0px;
 }
 
-
-
-nav ul {
+nav a {
     display: inline-block;
-    /* margin: auto; */
-    width: 570px;
-    padding: 0px;
+    width: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #626262;
-    display: inline-block;
-    /* margin: auto; */
-    /* width: 100%;
-    height: 45; */
-    text-transform: uppercase;
-    font-family: 'Playfair Display', Arial, Helvetica, sans-serif; 
-    }
-
-.nav {
+nav {
     text-align: center;
-    font-size: 0px;
-    margin-bottom: 104px;
+    margin-bottom: 63px;
 }
     
 .nav a:hover {
     text-decoration: none;
-    color: rgb(255, 0, 255)
-    }
-/* HEADER STOP*/
+    color: #03a9f4;
+    border: 1px solid #03a9f4;
+}
+/* HEADER STOP */
 
-
+/* MAIN START */
 body {
-    padding: 10px;
-    padding-left: 200px;
-    padding-right: 200px;
     background-color: snow;
-    font-size: 0px;
 }
 
-.main {
-    text-align: center;   
-    font-size: 0px;
-}
-
-.section {
+section {
     text-align: center;
-    padding: 20px;
+    margin: auto;
     vertical-align: top;
     font-size: 0px;
+    padding-bottom: 70px;
+    width: 1000px;
 }
 
 article {
     display: inline-block;
     width: 420px;
-    margin-top: 0;
-    padding: 10px;
-    text-align: left;
-    font-size: 0px;
-    padding: 20px;
+    padding: 30px;
     vertical-align: top;
-
 }
 
-article img {
+article:nth-last-of-type(-n+2) {
+    margin-bottom: 23px;
+}
+
+img {
     display: inline-block;
     width: 420px;
+    height: 280px;
+    margin-bottom: 30px;
 }
 
-header {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-/* div {
-    font-size: 0px;
-} */
-
-/* section li {
+.filter {
     display: inline-block;
-    width: 280;
-    margin: auto;
-} */
-
-/* section {
-    vertical-align: top;
-} */
+    margin-bottom: 22px;
+}
 
 h2 {
     font-size: 30px;
-    font-family: 'Playfair Display';
     font-style: bold;
-    text-align: left;
-    box-sizing: border-box;
-    vertical-align: top;
-    padding: 10px 0px;
+    margin-bottom: 26px;
 }
 
 p {
-    height: 300px;
-    box-sizing: border-box;
     display: inline-block;
-    width: 417px;
-    height: 62px;
-    font-size: 14px;
-    color: #626262;
-    padding: 10px 0px;
-    text-align: center;
-    text-align: left;
+    line-height: 24px;
 }
+/* MAIN STOP*/
 
-.title {
-    height: 40px;
-    font-size: 14px;
-    text-align: left;
-    font-family: 'Myriad Pro';
-    color: #b4ad9e;
+/* BUTTON START */
+BUTTON {
+    display: inline-block;
+    background: snow;
     box-sizing: border-box;
-    vertical-align: top;
-    padding: 10px 0px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 162px;
+    height: 58px;
+    border: 1px solid;
+    text-align: center;
 }
 
-
-
+button:hover {
+    text-decoration: none;
+    color: #03a9f4;
+    border: 1px solid #03a9f4;
+}
+/* BUTTON STOP */
