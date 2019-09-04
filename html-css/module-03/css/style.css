@@ -16,20 +16,21 @@
     height: auto;
     text-align: left;
 }
-
-body {
-    padding-top: 70px;
-}
 /* BODY STOP */
 
 /* HEADER START */
-ul {   
+.header {
+    padding-top: 70px;
+    padding-bottom: 73px;
+}
+
+.item {   
     text-align: center;
+    font-style: 0px;
 }
 
 nav li {
     display: inline-block;
-    width: 100px;
     margin-right: 100px;
 }
 
@@ -43,16 +44,16 @@ li:last-child {
 
 nav a {
     display: inline-block;
-    width: 100px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
 }
 
-nav {
+.nav {
     text-align: center;
-    margin-bottom: 73px;
+    width: 900px;
+    margin: auto;
 }
     
 .nav a:hover {
@@ -76,15 +77,20 @@ section {
     width: 1000px;
 }
 
-article {
+.article {
     display: inline-block;
     width: 420px;
-    padding: 30px;
     vertical-align: top;
+    margin-right: 60px;
+    margin-bottom: 120px;
+}
+
+article:nth-child(2n) {
+    margin-right: 0px;
 }
 
 article:nth-last-of-type(-n+2) {
-    margin-bottom: 23px;
+    margin-bottom: 43px;
 }
 
 img {
@@ -112,7 +118,7 @@ p {
 /* MAIN STOP*/
 
 /* BUTTON START */
-BUTTON {
+.button {
     display: inline-block;
     background: snow;
     box-sizing: border-box;
