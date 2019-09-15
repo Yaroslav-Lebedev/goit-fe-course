@@ -10,104 +10,108 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#">
-            <img src="img\logo\mart.png" width="78" height="21" alt="logo-company" class="logo">
-        </a>
-        <nav class="nav clearfix">
-            <ul class="list-nav">
-                <li class="item-nav"><a href="#" class="link-nav" >home</a></li>
-                <li class="item-nav"><a href="#" class="link-nav" >about us</a></li>
-                <li class="item-nav"><a href="#" class="link-nav" >page</a></li>
-                <li class="item-nav"><a href="#" class="link-nav" >shop</a></li>
-                <li class="item-nav"><a href="#" class="link-nav" >blog</a></li>
-                <li class="item-nav"><a href="#" class="link-nav" >contact us</a></li>
-            </ul>
-        </nav>
+    <header class="clearfix">
+        <div class="header">
+            <a href="#">
+                <img src="img\logo\mart.png" width="78" height="21" alt="logo-company" class="logo">
+            </a>
+            <nav class="nav clearfix">
+                <ul class="list-nav">
+                    <li class="item-nav"><a href="#" class="link-nav" >home</a></li>
+                    <li class="item-nav"><a href="#" class="link-nav" >about us</a></li>
+                    <li class="item-nav"><a href="#" class="link-nav" >page</a></li>
+                    <li class="item-nav"><a href="#" class="link-nav" >shop</a></li>
+                    <li class="item-nav"><a href="#" class="link-nav" >blog</a></li>
+                    <li class="item-nav"><a href="#" class="link-nav" >contact us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="products clearfix">
-        <h2 class="featured-products">featured products</h2>
-        <ul class="list-product clearfix">
-            <li class="item-product clearfix">
-                <a class="link-product" href="#">
-                    <img src="img/products/blue-tshirt.png" alt="photo-blue-tshirt">
-                    <h3 class="product">blue tshirt</h3>
-                    <p class="price">26</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/woman-shirt.png" alt="photo-woman-shirt">
-                    <h3 class="product">woman shirt</h3>
-                    <p class="price">31</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/yellow-tshirt.png" width="255" height="322" alt="photo-yellow-tshirt">
-                    <h3 class="product">yellow tshirt</h3>
-                    <p class="price">21</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/cool-lingerie.png" width="255" height="322" alt="photo-cool-lingerie">
-                    <h3 class="product">cool lingerie</h3>
-                    <p class="price">56</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/blue-tshirt2.png" width="255" height="322" alt="photo-blue-tshirt">
-                    <h3 class="product">blue tshirt</h3>
-                    <p class="price">26</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/woman-shirt2.png" width="255" height="322" alt="photo-woman-shirt">
-                    <h3 class="product">woman shirt</h3>
-                    <p class="price">31</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/yellow-tshirt2.png" width="255" height="322" alt="photo-yellow-tshirt">
-                    <h3 class="product">yellow tshirt</h3>
-                    <p class="price">21</p>
-                </a>
-            </li>
-            <li class="item-product">
-                <a class="link-product" href="#">
-                    <img src="img/products/cool-lingerie2.png" width="255" height="322" alt="photo-cool-lingerie">
-                    <h3 class="product">cool lingerie</h3>
-                    <p class="price">56</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <section class="news">
-        <h2 class="latest-news">latest news</h2>
-        <ul class="list-news clearfix">
-            <li class="item-news">
-                <img class="photo-news" src="img\news\news1-ipad.png" width="347" height="261" alt="photo-news1-ipad">
-                <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
-                <a href="#" class="read-more">Read More</a>
-            </li>
-            <li class="item-news">
-                <img class="photo-news" src="img\news\news2-meeting.png" width="347" height="261" alt="photo-news2-meeting">
-                <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
-                <a href="#" class="read-more">Read More</a>
-            </li>
-            <li class="item-news">
-                <img class="photo-news" src="img\news\news3-bus.png" width="347" height="261" alt="photo-news3-bus">
-                <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
-                <a href="#" class="read-more">Read More</a>
-            </li>
-        </ul>
-    </section>
+    <main>
+        <section class="products">
+            <h2 class="featured-products"><span>featured products</span></h2>
+            <ul class="list-product clearfix">
+                <li class="item-product clearfix">
+                    <a class="link-product" href="#">
+                        <img src="img/products/blue-tshirt.png" alt="photo-blue-tshirt">
+                        <h3 class="product">blue tshirt</h3>
+                        <p class="price">26</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/woman-shirt.png" alt="photo-woman-shirt">
+                        <h3 class="product">woman shirt</h3>
+                        <p class="price">31</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/yellow-tshirt.png" width="255" height="322" alt="photo-yellow-tshirt">
+                        <h3 class="product">yellow tshirt</h3>
+                        <p class="price">21</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/cool-lingerie.png" width="255" height="322" alt="photo-cool-lingerie">
+                        <h3 class="product">cool lingerie</h3>
+                        <p class="price">56</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/blue-tshirt2.png" width="255" height="322" alt="photo-blue-tshirt">
+                        <h3 class="product">blue tshirt</h3>
+                        <p class="price">26</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/woman-shirt2.png" width="255" height="322" alt="photo-woman-shirt">
+                        <h3 class="product">woman shirt</h3>
+                        <p class="price">31</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/yellow-tshirt2.png" width="255" height="322" alt="photo-yellow-tshirt">
+                        <h3 class="product">yellow tshirt</h3>
+                        <p class="price">21</p>
+                    </a>
+                </li>
+                <li class="item-product">
+                    <a class="link-product" href="#">
+                        <img src="img/products/cool-lingerie2.png" width="255" height="322" alt="photo-cool-lingerie">
+                        <h3 class="product">cool lingerie</h3>
+                        <p class="price">56</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="news">
+            <h2 class="latest-news">latest news</h2>
+            <ul class="list-news clearfix">
+                <li class="item-news">
+                    <img class="photo-news" src="img\news\news1-ipad.png" width="347" height="261" alt="photo-news1-ipad">
+                    <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                    <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
+                    <a href="#" class="read-more">Read More</a>
+                </li>
+                <li class="item-news">
+                    <img class="photo-news" src="img\news\news2-meeting.png" width="347" height="261" alt="photo-news2-meeting">
+                    <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                    <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
+                    <a href="#" class="read-more">Read More</a>
+                </li>
+                <li class="item-news">
+                    <img class="photo-news" src="img\news\news3-bus.png" width="347" height="261" alt="photo-news3-bus">
+                    <h3 class="news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+                    <p class="news-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat vitae pariatur nihil minus sit perferendis itaque dolor officiis doloremque?</p>
+                    <a href="#" class="read-more">Read More</a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

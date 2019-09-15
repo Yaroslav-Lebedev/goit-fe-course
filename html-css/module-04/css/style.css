@@ -73,19 +73,20 @@ content: '$';
 .news-title::after {
     content: '';
     display: block;
-    /* margin: auto; */
     width: 136px;
     height: 3px;
     background-color: #1abc9c;
-    margin-bottom: 30px;
     margin-top: 11px;
+    /* margin-bottom: 30px; */
     }
 
 .news-title {
+    display: inline-block;
     font-family: 'Open Sans Semibold', sans-serif;
     font-weight: 600;
     line-height: 26px;
-    color: #555252
+    color: #555252;
+    padding-bottom: 30px;
 }
 
 .news-post {
@@ -108,6 +109,8 @@ content: '$';
 
 .latest-news, .featured-products {
     display: inline-block;
+    font-size: 48px;
+    color: #515151;
     width: 1110px;
     padding-bottom: 32px;
     text-align: center;
@@ -124,6 +127,7 @@ content: '$';
 .header {
     margin: auto;
     width: 1110px;
+    padding: 43px 0px 110px 0px;
 }
 
 .clearfix::after {
@@ -137,15 +141,14 @@ content: '$';
 .logo {
     display: inline-block;
     float: left;
-    padding: 43px 0px;
-    margin-bottom: 47px;
+    /* padding: 43px 0px;
+    margin-bottom: 47px; */
     cursor: pointer;
 }
 
-.list-nav {
+.nav {
     float: right;
     width: auto;
-    padding: 43px 0px;
 }
 
 .item-nav {
@@ -172,20 +175,14 @@ content: '$';
     margin-right: 35px;
 }
 
-h2 {
-    font-size: 48px;
-    color: #515151;
-}
-
-h3 {
+.news-title, .product {
     font-size: 18px;
-    float: left;
 }
 
 .products, .news {
     width: 1110px;
     margin: auto;
-    margin-bottom: 73px;
+    padding-bottom: 73px;
 }
 
 .product {
@@ -260,12 +257,15 @@ h3 {
     color: #ffffff;
     border-radius: 7px;
     border: 0px;
-    cursor: pointer;
     text-decoration: none;
     text-align: center;
     line-height: 26px;
     padding: 13px;
-    cursor: pointer;
+    cursor: pointer red;
+}
+
+.read-more:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.75);
 }
 
 img {
