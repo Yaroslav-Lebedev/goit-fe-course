@@ -144,7 +144,7 @@ content: '$';
 
 .list-nav {
     float: right;
-    width:463px;
+    width: auto;
     padding: 43px 0px;
 }
 
