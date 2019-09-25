@@ -67,8 +67,7 @@ content: '$';
     height: 6px;
     background-color: #1abc9c;
     margin-top: 32px;
-    margin-bottom: 90px;
-    }
+}
 
 .news-title::after {
     content: '';
@@ -77,8 +76,7 @@ content: '$';
     height: 3px;
     background-color: #1abc9c;
     margin-top: 11px;
-    /* margin-bottom: 30px; */
-    }
+}
 
 .news-title {
     display: inline-block;
@@ -112,11 +110,11 @@ content: '$';
     font-size: 48px;
     color: #515151;
     width: 1110px;
-    padding-bottom: 32px;
     text-align: center;
     font-family: 'Roboto Black', sans-serif;
     font-weight: 900;
     letter-spacing: -0.02em;
+    margin-bottom: 90px;
 }
 
 .photo-news {
@@ -141,8 +139,6 @@ content: '$';
 .logo {
     display: inline-block;
     float: left;
-    /* padding: 43px 0px;
-    margin-bottom: 47px; */
     cursor: pointer;
 }
 
@@ -155,34 +151,18 @@ content: '$';
     float: left;
 }
 
-.item-nav:nth-child(1) {
-    margin-right: 34px;
-}
-
-.item-nav:nth-child(2) {
-    margin-right: 38px;
-}
-
-.item-nav:nth-child(3) {
+.item-nav {
     margin-right: 30px;
 }
 
-.item-nav:nth-child(4) {
-    margin-right: 27px;
-}
-
-.item-nav:nth-child(5) {
-    margin-right: 35px;
-}
-
-.news-title, .product {
-    font-size: 18px;
+.item-nav:last-child {
+    margin-right: 0px;
 }
 
 .products, .news {
     width: 1110px;
     margin: auto;
-    padding-bottom: 73px;
+    padding-bottom: 103px;
 }
 
 .product {
@@ -208,7 +188,6 @@ content: '$';
     position: relative;
     list-style-type: none;
     margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 .item-product {
