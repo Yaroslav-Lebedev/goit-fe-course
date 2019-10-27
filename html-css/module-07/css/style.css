@@ -44,12 +44,68 @@ table {
 }
 /* RESET STOP */
 
+/* FONTS START */
+/* oleo-script-regular - latin */
+@font-face {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oleo Script'), local('OleoScript-Regular'),
+         url('../fonts/oleo-script-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/oleo-script-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* oleo-script-700 - latin */
+  @font-face {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Oleo Script Bold'), local('OleoScript-Bold'),
+         url('../fonts/oleo-script-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/oleo-script-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* FONTS END */
+
+
 /* HEADER START */
-.conteiner {
+.header, .main, .nav {
     width: 940px;
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.conteiner {
+    position: relative;
+    width: 100%;
     margin: 0px auto;
+    background: #ffffff;
 }
 
 .nav-list {
@@ -59,24 +115,91 @@ table {
     justify-content: space-between;
 }
 
+.nav-iten-link {
+    color: #222222;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+}
+
+.text-services {
+    font-family: 'Roboto Slab',serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #777777;
+}
+
+.nav-iten-link:hover {
+    color: #fed136;
+}
+
 .nav a {
-    padding: 50px 0px;
-    display: block;
     text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
 .link-logo {
     display: block;
-
+    color: #fed136;
+    font-family: 'Oleo Script', cursive;
+    font-style: italic;
+    font-size: 26px;
 }
 
 /* HEADER END */
 
-.services {
-    width: 100%;
+.title-services {
+    font-size: 40px;
+    padding-top: 85px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.description-title-services, .form-description {
+    font-family: droid-serif,serif;
+    padding-top: 24px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.form-description {
+    padding-bottom: 75px;
+}
+
+.services, .form {
+    display: flex;
+    margin: 0 auto;
+    width: 940px;
     flex-direction: column;
     align-items: center;
     display: flex;
+}
+
+.name-services {
+    font-size: 18px;
+    line-height: 75px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700; 
+}
+
+.services-item::before {
+    content: '';
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: -66px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/icons/Icon-Basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .services-list {
@@ -84,8 +207,102 @@ table {
     justify-content: space-between;
     text-align: center;
     padding: 10px 0px;
+    padding-top: 145px;
 }
 
-.services h2, .nav-list {
+.services-item {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.services-item:not(:last-of-type) {
+    margin-right: 14px;
+}
+
+.services h2, .nav-list, .form-title {
     text-transform: uppercase;
 }
+
+.wrapper-textarea-input {
+    display: flex;
+}
+
+body {
+    background: #282828;
+}
+
+.form {
+    height: 675px;
+    color: #ffffff;
+}
+
+.form-wrapper {
+    background-color: #222222;
+    background-image: url(../img/background/map-image-on-background.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 110px;
+}
+
+.form-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.input-wrapper input {
+    height: 51px;
+    width: 455px;
+    font-family: 'Montserat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbbbbb;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.input-wrapper input:nth-last-child(-n+1) {
+    margin-bottom: 28px;
+}
+
+.input-wrapper {
+    margin-right: 28px;
+}
+
+textarea {
+    width: 455px;
+    height: 210px;
+    cursor: pointer;
+    font-family: 'Montserat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbbbbb;
+    padding: 20px;
+    overflow: auto;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.textarea {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.button-form {
+    display: block;
+    width: 240px;
+    height: 65px;
+    margin: 0 auto;
+    font-family: 'Montserat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-color: #fed136;
+}
+
+.e-mail:focus:invalid {
+    outline: 3px solid red;
+  }
