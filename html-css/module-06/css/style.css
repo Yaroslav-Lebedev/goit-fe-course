@@ -44,19 +44,6 @@ table {
 }
 /* RESET STOP */
 
-/* GENERAL START */
-.link-nav, .title-team-item, .title-services, .our-team, .description-team-item {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
-    font-weight: regular;
-}
-
-a {
-    text-decoration: none;
-}
-/* GENERAL STOP*/
-
 /* HEADER START */
 
 .list-nav{
@@ -105,7 +92,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     width: 1200px;
     padding: 40px 0px;
 }
@@ -116,6 +103,10 @@ a {
 /* HEADER STOP */
 
 /* MAIN START */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .wrapper-title, .wrapper-our-team {
     font-family: 'Montserrat', sans-serif;
@@ -123,9 +114,10 @@ a {
     color: #333333;
     font-weight: Bold;
     padding: 40px 0px 47px 0px;
-    display: flex;
+    text-align: center;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     align-items: center;
     text-transform: uppercase;
 }
@@ -136,6 +128,7 @@ a {
 }
 
 .description-title-amazing-services, .description-title-our-team {
+    display: block;
     font-family: 'Kaushan Script', cursive;
     line-height: 24px;
     font-size: 24px;
@@ -143,26 +136,22 @@ a {
     font-weight: regular;
     cursor: pointer;
     text-transform: none;
-    padding: 12px;
+    padding-bottom: 23px;
 }
 
 .services-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
-    margin: auto;
     padding-left: 62px;
 }
+
 .services-item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 50px 0px;
+    padding-right: 20px;
     position: relative;
     vertical-align: middle;
-    width: 275px;
+    width: 300px;
 }
 
 .long-description-our-team {
@@ -178,6 +167,7 @@ a {
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
     font-size: 15px;
+    padding-right: 30px;
     color: #999999;
 }
 
@@ -217,7 +207,6 @@ a {
 
 .services-item {
     width: 350px;
-    height: 111px;
 }
 
 .link-team-item {
@@ -341,7 +330,6 @@ a {
     height: 480px;
     position: relative;
     list-style-type: none;
-    margin-right: 30px;
 }
 
 .item-team:nth-of-type(4n+4) {
@@ -353,22 +341,24 @@ a {
     font-family: 'Roboto', sans-serif;
     color: #999999;
     font-style: italic;
-    line-height: 24px;
+    line-height: 11px;
     font-size: 15px;
     text-align: center;
     text-transform: none;
-    position: absolute;
-    bottom: -57px;
-    transform: translateY(50%);
+    padding-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: regular;
 }
 
 .title-team-item {
-    line-height: 14px;
+    line-height: 10px;
     font-weight: regular;
     color: #333333;
-    position: absolute;
-    bottom: -30px;
-    transform: translateY(50%);
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: regular;
 }
 
 .list-team {
@@ -444,3 +434,17 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+/* ANIMATION STOP */
+
+/* GENERAL START */
+.link-nav, .title-services, .our-team {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-weight: regular;
+}
+
+a {
+    text-decoration: none;
+}
+/* GENERAL STOP*/
