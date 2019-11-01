@@ -7,8 +7,7 @@
     position: relative;
     width: 100%;
     height: 540px;
-    background-color: #1a1915;
-    background-image: url(../img/background/bcg_320x540.png);
+    background-image: url(../img/background/bcg_320x540.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -376,7 +375,7 @@ table {
     }
 
     .header {
-        background-image: url(../img/background/bcg_768x700.png);
+        background-image: url(../img/background/bcg_768x700.jpg);
     }
 }
 
@@ -403,7 +402,7 @@ table {
     }
 
     .header {
-        background-image: url(../img/background/bcg_1440x700.png);
+        background-image: url(../img/background/bcg_1440x700.jpg);
     }
 }
 /* MEDIA END */
