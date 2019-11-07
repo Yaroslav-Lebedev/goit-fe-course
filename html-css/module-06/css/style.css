@@ -1,49 +1,3 @@
-/* RESET START */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* RESET STOP */
-
 /* HEADER START */
 
 .list-nav{
@@ -147,11 +101,10 @@ table {
 }
 
 .services-item {
-    padding: 50px 0px;
-    padding-right: 20px;
     position: relative;
     vertical-align: middle;
-    width: 300px;
+    width: 350px;
+    margin-bottom: 50px;
 }
 
 .long-description-our-team {
@@ -171,6 +124,11 @@ table {
     color: #999999;
 }
 
+.services-item:nth-child(3n+3) p {
+    padding-right: 0px;
+}
+
+
 .services-item .title-services::after {
     content: '';
     display: block;
@@ -181,7 +139,7 @@ table {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -100%);
-    left: -30px;
+    left: -25px;
 
 }
 
@@ -203,10 +161,6 @@ table {
 
 .item-icon-6 .title-services::after {
     background-image: url(../img/icons/IMAGE.png);
-}
-
-.services-item {
-    width: 350px;
 }
 
 .link-team-item {
@@ -437,6 +391,16 @@ footer {
 /* ANIMATION STOP */
 
 /* GENERAL START */
+html{
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
 .link-nav, .title-services, .our-team {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -448,3 +412,49 @@ a {
     text-decoration: none;
 }
 /* GENERAL STOP*/
+
+/* RESET START */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET STOP */
