@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.sprite {
+    display: none;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -80,11 +84,15 @@
     margin: 0px;
 }
 
-.site-navigation__list svg {
+.site-navigation__item svg {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    fill: red;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.site-navigation__item:hover svg {
+    fill: #fce38a;
 }
 
 .site-navigation__item {
@@ -320,41 +328,28 @@
 }
 
 .wrapper-btn__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     box-sizing: border-box;
     border: none;
     margin: 1px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #fce38a;
     opacity: 0;
     cursor: pointer;
 }
 
-.facebook {
-    top: 0px;
-    left: 0px;
-    background-size: 0.5;
-    background-image: url(../img/icons/facebook.png);
+.wrapper-btn__icon svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    fill: #f38181;
 }
 
-.twitter {
-    top: 0px;
-    left: 0px;
-    background-image: url(../img/icons/twitter.png);
-}
-
-.pinterest {
-    top: 0px;
-    left: 0px;
-    background-image: url(../img/icons/pinterest.png);
-}
-
-.instagram {
-    top: 0px;
-    left: 0px;
-    background-image: url(../img/icons/instagram.png);
+.wrapper-btn__icon:hover svg {
+    fill: #fff;
 }
 
 .text-button {
