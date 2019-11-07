@@ -1,6 +1,8 @@
 /* HEADER START */
-.conteiner {
+.container {
     min-width: 320px;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .header {
@@ -57,7 +59,8 @@ a {
     height: 100px;
 }
 
-.link-logo, .wrapper-title {
+
+.link-logo  {
     position: absolute;
     top: 32%;
     right: 50%;
@@ -70,6 +73,11 @@ a {
 }
 
 .wrapper-title {
+    display: block;
+    color: #ffffff;
+    font-family: 'Montserrat', cursive;
+    font-weight: 700;
+    font-size: 20px;
     top: 40%;
     text-align: center;
     width: 100%;
@@ -127,6 +135,7 @@ a {
 
 .our-team {
     width: 100%;
+    padding-bottom: 58px;
 }
 
 .name-our-team {
@@ -174,7 +183,6 @@ body {
     height: 40px;
     margin: 0 auto;
     cursor: pointer;
-    margin-bottom: 58px;
 }
 
 .img-item {
@@ -305,6 +313,13 @@ table {
 /* FONTS END */
 
 /* MEDIA START */
+
+@media (min-width: 320px) {
+    .nav {
+        margin: 0 auto 135px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     .our-team-item {
         width: 50%;
@@ -316,6 +331,7 @@ table {
         padding-left: 0px;
         padding-right: 150px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -328,7 +344,7 @@ table {
     .nav {
         display: flex;
         justify-content: space-between;
-        padding: 0px 40px;
+        margin: 0 auto 110px;
     }
 
     .link-logo {
@@ -379,7 +395,7 @@ table {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
     .our-team-item {
         width: 25%;
     }
@@ -388,17 +404,12 @@ table {
         background-size: cover;
     }
 
-    .our-team-list {
-        width: 940px;
-    }
-
     .wrapper-title {
         top: 30%;
     }
 
     .nav {
-        max-width: 940px;
-        margin: 0 auto;
+        margin: 0 auto 110px;
     }
 
     .header {
