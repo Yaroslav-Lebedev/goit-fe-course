@@ -1,15 +1,19 @@
 /* HEADER START */
-.header, .main, .nav {
-    width: 940px;
-    margin: 0 auto;
+.container-fluid {
     background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header, .main, .nav {
+    /* width: 100%; */
+    margin: 0 auto;
 }
 
 .container {
     position: relative;
-    width: 100%;
+    width: 940px;
     margin: 0px auto;
-    background: #ffffff;
 }
 
 .nav-list {
@@ -140,11 +144,16 @@ body {
     color: #ffffff;
 }
 
-.form-wrapper {
+.section-wrapper {
     background-color: #222222;
     background-image: url(../img/background/map-image-on-background.png);
     background-position: right;
     background-repeat: no-repeat;
+    width: 100%;
+}
+
+.form-wrapper {
+    background-color: transparent;
     width: 100%;
     padding-top: 110px;
 }
@@ -205,6 +214,12 @@ textarea {
     color: #fff;
     border: none;
     background-color: #fed136;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    border: #fff;
+    background-color: green;
 }
 
 .e-mail:focus:invalid {
