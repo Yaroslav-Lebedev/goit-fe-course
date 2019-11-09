@@ -48,7 +48,7 @@
     background-repeat: no-repeat;
 }
 
-.conteiner {
+.container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -202,23 +202,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 62px;
 }
 
 .section-services__item {
     padding: 50px 0px;
-    padding-right: 20px;
+    box-sizing: border-box;
+    width: 33%;
     position: relative;
     vertical-align: middle;
     width: 30%;
+    padding-left: 62px;
 }
 
 .section-services__text-item {
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
     font-size: 15px;
-    padding-right: 30px;
-    padding-left: 60px;
     color: #999999;
 }
 
@@ -228,7 +227,6 @@
     font-size: 14px;
     line-height: 1;
     color: #333333;
-    padding-left: 60px;
     padding-bottom: 17px;
 }
 
@@ -273,10 +271,9 @@
 
 .section-team__item {
     width: 380px;
-    height: 480px;
     position: relative;
     list-style: none;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 .section-team__item:nth-of-type(4n+4) {
